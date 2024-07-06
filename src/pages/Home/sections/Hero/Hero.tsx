@@ -4,6 +4,7 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+import AnimatedTypography from "../../../../components/AnimatedTypography/AnimatedTypography";
 
 const Hero = () => {
 
@@ -15,8 +16,6 @@ const Hero = () => {
         [theme.breakpoints.up('xs')]: {
             paddingTop: "130px",
         },
-        [theme.breakpoints.up('md')]: {
-        }
 
     }))
 
@@ -45,16 +44,16 @@ const Hero = () => {
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Mohamed Schuster</Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center"pb={3}>I'm a software developer</Typography>
+                        <AnimatedTypography color="primary.contrastText" variant="h2" textAlign="center"pb={3}>I'm a software developer</AnimatedTypography>
                         <Grid container spacing={3} display="flex" justifyContent="center">
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick= {() => console.log("teste")}>
                                     <FileDownloadIcon/>
                                     <Typography>DOWNLOAD CV</Typography>
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick= {() => console.log("teste")}>
                                     <MailOutlineIcon/>
                                     <Typography>CONTACT ME</Typography>
                                 </StyledButton>
