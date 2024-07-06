@@ -12,13 +12,20 @@ const Hero = () => {
         height: "100vh",
         display: "flex",
         alignItems: "center",
+        [theme.breakpoints.up('xs')]: {
+            paddingTop: "130px",
+        },
+        [theme.breakpoints.up('md')]: {
+        }
 
     }))
 
     const StyledImg = styled("img")(({theme})=>({
         width: "80%",
         borderRadius:"50%",
-        border: `1px soliud ${theme.palette.primary.contrastText}`
+        border: `1px soliud ${theme.palette.primary.contrastText}`,
+        [theme.breakpoints.up('xs')]: {
+        },
     }))
 
     return (
@@ -31,7 +38,7 @@ const Hero = () => {
                             <Box position="absolute" width={"150%"} top={-100} right={0}>
                                 <AnimatedBackground/>
                             </Box>
-                            <Box position="relative">
+                            <Box position="relative" paddingLeft={"48px"}>
                             <StyledImg src={Avatar} alt="avatar" />
                             </Box>
                         </Box>
