@@ -47,15 +47,16 @@ const About: React.FC = () => {
         </Grid>
 
         <Box mt={4}>
-          <Typography variant="body1" paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta semper velit vel rutrum. 
-            Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris. 
-            Phasellus a ultrices elit. Curabitur ut diam eu orci auctor pretium. Nullam ultricies erat quam, 
-            eget porta velit vehicula sit amet. Nullam sodales iaculis metus, sed vestibulum nisl vulputate at. 
-            Integer in pulvinar libero. Donec ornare est quis tortor varius efficitur. 
-            Maecenas sed erat quis felis facilisis pellentesque. 
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-            Nullam id felis convallis, luctus lorem eget, varius dolor.
+          <Typography variant="body1" paragraph >
+            Recently graduated in Computer Science, with
+            experience in developing web applications using
+            technologies such as JavaScript, HTML5, CSS, React
+            and NodeJS. Proven skills in front-end frameworks
+            (React), version control, and back-end development
+            with NodeJS. Knowledgeable in SQL and NoSQL
+            databases and experienced with TypeScript and
+            NodeJS frameworks(Express). Seeking opportunities
+            to gain experience and available for IEFP internship.
           </Typography>
         </Box>
 

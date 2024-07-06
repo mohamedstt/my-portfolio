@@ -8,7 +8,6 @@ const NavBar = () => {
       justifyContent: 'space-evenly',
       alignItems: 'center',
       backgroundColor: theme.palette.primary.main,
-      borderRadius: '30px',
     }))
     const StyledMenuItem = styled(MenuItem)<{ active?: boolean }>(({ theme, active }) => ({
       color: active ? theme.palette.primary.main : theme.palette.primary.contrastText,

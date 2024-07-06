@@ -15,12 +15,13 @@ const Hero = () => {
         alignItems: "center",
         [theme.breakpoints.up('xs')]: {
             paddingTop: "130px",
+            paddingBottom: "80px",
         },
 
     }))
 
     const StyledImg = styled("img")(({theme})=>({
-        width: "80%",
+        width: "85%",
         borderRadius:"50%",
         border: `1px soliud ${theme.palette.primary.contrastText}`,
         [theme.breakpoints.up('xs')]: {
@@ -32,7 +33,7 @@ const Hero = () => {
         <StyledHero>
             <Container maxWidth="lg">            
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={12} md={4}>
                         <Box position="relative" >
                             <Box position="absolute" width={"150%"} top={-100} right={0}>
                                 <AnimatedBackground/>
@@ -42,8 +43,8 @@ const Hero = () => {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={7}>
-                        <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Mohamed Schuster</Typography>
+                    <Grid item xs={12} md={8}>
+                        <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={1}>Mohamed Schuster</Typography>
                         <AnimatedTypography color="primary.contrastText" variant="h2" textAlign="center"pb={3}>I'm a software developer</AnimatedTypography>
                         <Grid container spacing={3} display="flex" justifyContent="center">
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
@@ -59,8 +60,6 @@ const Hero = () => {
                                 </StyledButton>
                             </Grid>
                         </Grid>
-                        
-                        
                     </Grid>
                 </Grid>
             </Container>
