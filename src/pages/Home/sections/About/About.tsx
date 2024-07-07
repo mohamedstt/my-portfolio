@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Container, Grid, styled, Typography, Card, CardContent } from "@mui/material";
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import SchoolIcon from '@mui/icons-material/School';
+import LineDivisor from '../../../../components/LineDivisor/LineDivisor';
 
 const AboutSection = styled('section')(({ theme }) => ({
   padding: theme.spacing(8, 0),
@@ -18,7 +19,7 @@ const SkillBox = styled(Box)(({ theme }) => ({
 
 const About: React.FC = () => {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <Container maxWidth="md">
         <Typography variant="h2" gutterBottom>About me</Typography>
         
@@ -46,7 +47,7 @@ const About: React.FC = () => {
           </Grid>
         </Grid>
 
-        <Box mt={4}>
+        <Box mt={4} marginTop={"40px"}>
           <Typography variant="body1" paragraph >
             Recently graduated in Computer Science, with
             experience in developing web applications using
@@ -59,9 +60,10 @@ const About: React.FC = () => {
             to gain experience and available for IEFP internship.
           </Typography>
         </Box>
+        <LineDivisor color='black'/>
 
-        <Box mt={5}>
-          <Typography variant="h2" gutterBottom>Skills</Typography>
+        <Box mt={10}>
+          <Typography variant="h2" gutterBottom id="skills">Skills</Typography>
           <Grid container spacing={4} justifyContent="center">
             {['Javascript', 'Typescript', 'React', 'Next', 'Git', 'HTML', 'CSS', 'WordPress', 'Python', 'Material UI', 'Figma'].map((skill, index) => (
               <Grid item key={index}>
