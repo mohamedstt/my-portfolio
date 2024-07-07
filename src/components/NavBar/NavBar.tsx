@@ -1,5 +1,5 @@
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
-
+import { Link as ScrollLink } from 'react-scroll';
 
 
 const NavBar = () => {
@@ -26,9 +26,22 @@ const NavBar = () => {
       <>
         <AppBar position="absolute">
             <StyledToobar>
-            <StyledMenuItem >About</StyledMenuItem>
-            <StyledMenuItem>Skills</StyledMenuItem>
-            <StyledMenuItem>Projects</StyledMenuItem>
+              <StyledMenuItem>
+              <ScrollLink to="about" smooth={true} duration={500}>
+                About
+              </ScrollLink> 
+              </StyledMenuItem>
+              <StyledMenuItem>
+              <ScrollLink to="skills" smooth={true} duration={500}>
+                Skills
+              </ScrollLink> 
+              </StyledMenuItem>
+              <StyledMenuItem>
+              <ScrollLink to="projects" smooth={true} duration={500}>
+                Projects
+              </ScrollLink> 
+              </StyledMenuItem>
+              
             </StyledToobar>
         </AppBar>
       </>
