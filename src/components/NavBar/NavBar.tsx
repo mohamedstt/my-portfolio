@@ -1,5 +1,6 @@
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
 import { Link as ScrollLink } from 'react-scroll';
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 
 const NavBar = () => {
@@ -43,9 +44,9 @@ const NavBar = () => {
                 Projects
               </ScrollLink> 
               </StyledMenuItem>
-              
             </StyledToobar>
         </AppBar>
+              <LanguageSwitcher />
       </>
     )
   }

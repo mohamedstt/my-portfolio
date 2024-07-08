@@ -38,7 +38,7 @@ const projects = [
 const Projects: React.FC = () => {
   return (
     <Container maxWidth="md" id="projects">
-      <Typography variant="h3" align="center" gutterBottom pb={"50px"}>
+      <Typography variant="h3" align="center" gutterBottom pb={"10px"}>
         Projects
       </Typography>
       <Grid container spacing={3}>

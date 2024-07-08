@@ -6,12 +6,28 @@ let theme = createTheme({
       main: "#232323",
     },
     secondary: {
-      main: "#8A2BE2",
+      main: "#9400D3",
     },
   },
   typography: {
-    fontFamily: "Helvetica Neue",
-  }
+    fontFamily: [
+      'Roboto',
+      'Montserrat',
+      'sans-serif',
+    ].join(','),
+    h1: {
+      fontFamily: 'Montserrat',
+    },
+    h2: {
+      fontFamily: 'Montserrat',
+    },
+    body1: {
+      fontFamily: 'Roboto',
+    },
+    body2: {
+      fontFamily: 'Roboto',
+    },
+  },
 });
 
 theme = responsiveFontSizes(theme);
