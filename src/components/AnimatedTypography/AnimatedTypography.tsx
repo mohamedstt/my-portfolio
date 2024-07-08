@@ -16,7 +16,10 @@ const AnimatedTextWrapper = styled("div")(({ theme }) => ({
   borderRight: `2px solid ${theme.palette.primary.contrastText}`,
   whiteSpace: "nowrap",
   overflow: "hidden",
-  animation: `${typing} 4s steps(40, end), ${blink} 0.75s step-end infinite`
+  animation: `${typing} 4s steps(40, end), ${blink} 0.75s step-end infinite`,
+  [theme.breakpoints.up('xs')]: {
+    
+  },
 }));
 
 interface AnimatedTypographyProps extends TypographyProps {

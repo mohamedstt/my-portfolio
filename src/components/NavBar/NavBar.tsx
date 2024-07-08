@@ -5,7 +5,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const NavBar = () => {
     const StyledToobar = styled(Toolbar)(({ theme })=>({
       display: 'flex',
-      justifyContent: 'space-evenly',
+      justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: theme.palette.primary.main,
     }))
@@ -13,11 +13,13 @@ const NavBar = () => {
       color: active ? theme.palette.primary.main : theme.palette.primary.contrastText,
       backgroundColor: active ? 'white' : 'transparent',
       borderRadius: '20px',
-      padding: theme.spacing(1, 2),
+      padding: theme.spacing(1, 10),
+      [theme.breakpoints.up('xs')]: {
+        padding: theme.spacing(1,2),
+      },
       fontSize: '1.2rem', 
       '&:hover': {
-        backgroundColor: theme.palette.primary.light,
-        color: theme.palette.primary.main,
+        color: theme.palette.secondary.main,
       },
     }));
   
